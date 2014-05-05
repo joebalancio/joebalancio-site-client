@@ -1,0 +1,28 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#about">About</a></li>
+    <li class="active"><a ng-href="#hobbies">Hobbies</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">joebalancio site client</h3>
+</div>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li><a data-target="#about" data-toggle="tab">About</a></li>
+  <li><a data-target="#hardware" data-toggle="tab">Hardware</a></li>
+  <li class="active"><a data-target="#tracks" data-toggle="tab">Tracks</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane" id="about">...</div>
+  <div class="tab-pane" id="hardware">...</div>
+  <div class="tab-pane active" id="tracks">
+    <div class="row">
+      <div  ng-repeat="track in music.tracks" class="col-md-4">
+        <track class="track" ng-data="track"/>
+      </div>
+    </div>
+  </div>
+</div>
